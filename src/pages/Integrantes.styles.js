@@ -16,7 +16,13 @@ export const Allcons = styled.div`
 
         @media (min-width: 1023px) {
             margin-bottom: 2rem;
-            max-width: 40%;
+            max-width: 60%;
+            min-width: 40%;
+        }
+        @media (max-width: 1023px) {
+            margin-bottom: 2rem;
+            max-width: 60%;
+            min-width: 40%;
         }
     }
     p {
@@ -63,7 +69,7 @@ export const Allcons = styled.div`
         font-family: "Open Sans", sans-serif;
         font-size: 300%;
         font-weight: 700;
-        color:#00FF66;
+        color:#FFF;
         margin-block: 5%;
     }
 `
@@ -80,7 +86,7 @@ export const Tudo = styled.div`
 `
 
 export const ImgHeaderUm = styled.div`
-    background-color:#7ED957;
+    background-color:#060F24;
 `
 
 export const Espaco = styled.div`
@@ -165,20 +171,76 @@ export const Pessoas = styled.div`
             }
 `
 export const Giovanny = styled.div`
-    margin-inline: 7%;
-    width: 100%;
+    margin-left: 8%;
+    width: 120%;
 `
 
 export const Joao = styled.div`
-    margin-inline: 8%;
-    width: 100%;
+    margin-inline: 7.5%;
+    width: 103%;
 `
 export const Santini = styled.div`
-    margin-inline: 8%;
-    margin-right: 9%.5;
+    margin-inline: 7.5%;
+
     width: 100%;
 `
 export const Nicolas = styled.div`
-    width: 90%;
-    margin-inline: 8%;
+    width: 95%;
+    margin-left: 8%;
+    margin-right: 7.5%;
+`
+export const Texto = styled.div`
+    margin-left: 15%;
+`
+export const BotaoUm = styled.button`
+@media (min-width: 767px) {
+    text-decoration: none;
+    border: #7ED957;
+    width: 10%;
+    margin-left: 6%;
+    background: none;
+    img{
+        width: 99.9%;
+        height: 100%;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    text-decoration: none;
+    border: #7ED957;
+    width: 10%;
+    margin-left: 6%;
+    background: none;
+    img{
+        width: 99.9%;
+        height: 100%;
+        padding: 0;
+    }
+}
+`
+export const BotaoDois = styled.button`
+@media (min-width: 767px) {
+    text-decoration: none;
+    border: #7ED957;
+    width: 10%;
+    margin-left: 70%;
+    background: none;
+    img{
+        width: 99.9%;
+        height: 100%;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    text-decoration: none;
+    border: #7ED957;
+    width: 10%;
+    margin-left: 70%;
+    background: none;
+    img{
+        width: 99.9%;
+        height: 100%;
+        padding: 0;
+    }
+}
 `

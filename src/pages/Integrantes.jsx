@@ -1,4 +1,4 @@
-import { Allcons, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, Espacodois } from "./Integrantes.styles.js";
+import { Allcons, BotaoDois, Texto, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, BotaoUm, Espacodois } from "./Integrantes.styles.js";
 import React, { useState, useEffect } from 'react';
 
 import nicolas from '../assets/Nicolas2.png'
@@ -8,6 +8,7 @@ import joao from "../assets/Joao.png"
 import menu from '../assets/menu.svg'
 import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
+import bebo from '../assets/Bebado.png'
 
 export function Integrantes() {
 
@@ -78,28 +79,24 @@ export function Integrantes() {
 
 
 
-
-
-
-
-
-
-
-
-
-
       <Pessoas>
-      <Giovanny>
-      <img src={giovanny} alt="" />
+        <Giovanny>
+      <img src={bebo} alt="" />
       </Giovanny>
       
       <Espaco>
-        <p>2. Giovanny Biguinati Jardim Engenheiro do Projeto Físico (Engenheiro/Arquiteto):</p>
+      <Texto>
+      <p>2. Giovanny Biguinati Jardim Engenheiro do Projeto Físico (Engenheiro/Arquiteto):</p>
       
       
-      <li>Este integrante é responsável por transformar as ideias digitais em realidade física, se necessário. Eles possuem conhecimentos técnicos em engenharia ou arquitetura, dependendo das necessidades do projeto. Seu papel é coordenar a construção física do projeto, garantindo que seja viável, seguro e funcional. Isso pode envolver desde a construção de estruturas físicas até a integração de tecnologias físicas, dependendo da natureza do projeto.</li>
+        <li>Este integrante é responsável por transformar as ideias digitais em realidade física, se necessário. Eles possuem conhecimentos técnicos em engenharia ou arquitetura, dependendo das necessidades do projeto. Seu papel é coordenar a construção física do projeto, garantindo que seja viável, seguro e funcional. Isso pode envolver desde a construção de estruturas físicas até a integração de tecnologias físicas, dependendo da natureza do projeto.</li>
+        </Texto>
       </Espaco>
       </Pessoas>
+
+
+
+
 
 
 
@@ -209,7 +206,7 @@ export function Integrantes() {
       </Espacodois>
 
 
-      <img src={giovanny} alt="" />
+      <img src={bebo} alt="" />
 
       
       <Espaco>
