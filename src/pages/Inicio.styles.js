@@ -140,7 +140,7 @@ export const NovoBotaodois = styled.div`
     justify-content: center;
     justify-items: center;
     display: flex;
-    gap: 33%;
+    gap: %;
     padding-block: 0.5%;
 
 
