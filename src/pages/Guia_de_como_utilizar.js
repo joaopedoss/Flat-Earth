@@ -72,9 +72,6 @@ export const Allcons = styled.div`
         }
     }
 `
-export const Intero = styled.div`
-
-`
 
 export const Final = styled.div`
     height: 5rem;
@@ -182,39 +179,25 @@ export const Espacodois = styled.div`
 `
 
 
-export const Cabeca = styled.div`
-    background-color:#060F24;
-`
-export const NovoBotaodois = styled.div`
-    text-align: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    display: flex;
-    gap: 33%;
-    padding-block: 0.5%;
 
 
-    img {
-            text-decoration: none;
-            width: 6%;
-            margin-left: 1%;
-            background: none;
-        img{
-            width: 99.9%;
-            height: 100%;
-            padding: 0;
-        }
-    }
 
-`
+
+
+//cabecario
+
 export const Amem = styled.button`
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
     background: none;
     border: none;
     color: #FFF;
     font-weight: 900;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
+    gap: 30%;
+    margin-right: 2rem;
     @media (min-width: 1300px) {
         background: none;
         border: none;
@@ -224,36 +207,40 @@ export const Amem = styled.button`
     }
 `
 
-export const Botaooumm = styled.button`
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-    border-radius: 25px;
-    color: #42C30B;
-    background-color: white;
-    padding: 4%;
-    padding-inline: 10%;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    justify-content: right;
-    margin-left: 8%;
-`
-export const Botaoodoiss = styled.button`
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-    border-radius: 25px;
-    color: #42C30B;
-    background-color: black;
-    padding: 4%;
-    padding-inline: 10%;
-    margin-left: 0.3%;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    justify-content: right;
+export const NovoBotaoTres = styled.div`
+    margin-left: auto;
+    dislay: flex;
+    text-alight: inline;
+    width: auto;
 `
 
+export const NovoBotaodois = styled.div`
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    padding-block: 0.5%;
+
+
+    img {
+            text-decoration: none;
+            width: 6%;
+            margin-inline: 3%;
+            background: none;
+        img{
+            width: 99.9%;
+            height: 100%;
+            padding: 0;
+        }
+    }
+`
+
+export const Cabeca = styled.header`
+    background-color:#060F24;
+`
+
+export const Intero = styled.div`
+
+`

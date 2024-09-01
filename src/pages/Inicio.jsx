@@ -1,5 +1,6 @@
-import { Allcons, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Inicio.styles.js";
+import { Allcons, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Inicio.styles.js";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import imgum from '../assets/Pagumm.png'
 import fola from '../assets/fola.png'
@@ -27,7 +28,6 @@ export function Inicio() {
     {tamanho > 1023 ? (
     <Intero>
     <Cabeca>
-    <header>
     <NovoBotaodois>
 
 
@@ -37,22 +37,21 @@ export function Inicio() {
       
     
       
-        <Amem >Flat-Earth</Amem>
-        <Amem >Flat-Earth</Amem>
-        <Amem >Flat-Earth</Amem>
-        <Amem >Flat-Earth</Amem>
-        <Amem >Flat-Earth</Amem>
+        <Amem ><Link to="/">Flat-Earth</Link></Amem>
+        
+        <NovoBotaoTres>
+          <Amem> <Link to="/Guia">Guia</Link></Amem>
+          <Amem> <Link to="/Pecas">Peças</Link></Amem>
+          <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
+          <Amem> <Link to="/Referencias">Referências</Link></Amem>
+        </NovoBotaoTres>
+        </NovoBotaodois>
 
 
 
-        <img src={MyMenu} alt="" />
 
 
-
-
-
-      </NovoBotaodois>
-    </header>
+      
     </Cabeca>
     
     <Allcons>
@@ -84,6 +83,7 @@ export function Inicio() {
         <BotaoDois>
           <img src={MyMenu} alt="" />
         </BotaoDois> 
+        
       </header>
       </ImgHeaderUm>
       

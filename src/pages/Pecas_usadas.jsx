@@ -1,5 +1,6 @@
-import { Allcons, Pekinhas, Fiodofio, NovoBotaodois, Amem, Botaooumm, Botaoodoiss, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Pecas_usadas.style.js";
+import { Allcons, Pekinhas, Fiodofio, NovoBotaodois, Amem, NovoBotaoTres, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Pecas_usadas.style.js";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import placa from '../assets/placa.png'
 import servo from '../assets/servo.png'
@@ -40,7 +41,6 @@ export function Pecas() {
     {tamanho > 1023 ? (
     <Intero>
     <Cabeca>
-    <header>
     <NovoBotaodois>
 
 
@@ -50,18 +50,21 @@ export function Pecas() {
       
     
       
-        <Amem >Flat-Earth</Amem>
+        <Amem ><Link to="/">Flat-Earth</Link></Amem>
+        
+        <NovoBotaoTres>
+          <Amem> <Link to="/Guia">Guia</Link></Amem>
+          <Amem> <Link to="/Pecas">Peças</Link></Amem>
+          <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
+          <Amem> <Link to="/Referencias">Referências</Link></Amem>
+        </NovoBotaoTres>
+        </NovoBotaodois>
 
 
 
-        <img src={MyMenu} alt="" />
 
 
-
-
-
-      </NovoBotaodois>
-    </header>
+      
     </Cabeca>
     
     <Allcons>

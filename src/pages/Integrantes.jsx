@@ -1,5 +1,6 @@
-import { Allcons, BotaoDois, Texto, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, BotaoUm, Espacodois } from "./Integrantes.styles.js";
+import { Allcons, BotaoDois, NovoBotaoTres, Texto, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, BotaoUm, Espacodois } from "./Integrantes.styles.js";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import nicolas from '../assets/Nicolas2.png'
 import giovanny from "../assets/Giovanny.png"
@@ -30,8 +31,7 @@ export function Integrantes() {
     <div>
     {tamanho > 1023 ? (
     <Intero>
-    <Cabeca>
-    <header>
+        <Cabeca>
     <NovoBotaodois>
 
 
@@ -41,18 +41,21 @@ export function Integrantes() {
       
     
       
-        <Amem >Flat-Earth</Amem>
+        <Amem ><Link to="/">Flat-Earth</Link></Amem>
+        
+        <NovoBotaoTres>
+          <Amem> <Link to="/Guia">Guia</Link></Amem>
+          <Amem> <Link to="/Pecas">Peças</Link></Amem>
+          <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
+          <Amem> <Link to="/Referencias">Referências</Link></Amem>
+        </NovoBotaoTres>
+        </NovoBotaodois>
 
 
 
-        <img src={MyMenu} alt="" />
 
 
-
-
-
-      </NovoBotaodois>
-    </header>
+      
     </Cabeca>
     
     <Allcons>

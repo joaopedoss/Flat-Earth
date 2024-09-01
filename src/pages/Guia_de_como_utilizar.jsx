@@ -1,5 +1,6 @@
-import { Allcons, Efinal, NovoBotaodois, Amem, Botaooumm, Botaoodoiss, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois, Espaco, Espacodois } from "./Guia_de_como_utilizar.js";
+import { Allcons, Efinal, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois, Espaco, Espacodois } from "./Guia_de_como_utilizar.js";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import imgtres from '../assets/pagtres.png'
 import menu from '../assets/menu.svg'
@@ -28,7 +29,6 @@ export function Guia() {
     {tamanho > 1023 ? (
     <Intero>
     <Cabeca>
-    <header>
     <NovoBotaodois>
 
 
@@ -38,18 +38,21 @@ export function Guia() {
       
     
       
-        <Amem >Flat-Earth</Amem>
+        <Amem ><Link to="/">Flat-Earth</Link></Amem>
+        
+        <NovoBotaoTres>
+          <Amem> <Link to="/Guia">Guia</Link></Amem>
+          <Amem> <Link to="/Pecas">Peças</Link></Amem>
+          <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
+          <Amem> <Link to="/Referencias">Referências</Link></Amem>
+        </NovoBotaoTres>
+        </NovoBotaodois>
 
 
 
-        <img src={MyMenu} alt="" />
 
 
-
-
-
-      </NovoBotaodois>
-    </header>
+      
     </Cabeca>
     
     <Allcons>

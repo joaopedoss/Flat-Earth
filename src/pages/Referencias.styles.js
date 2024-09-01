@@ -1,27 +1,64 @@
 import styled from "styled-components"
 
 export const Allcons = styled.div`
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
+
     padding-top: 2rem;
     background-color: #192132;
 
     padding-bottom: 2rem;
+
+    a{
+        @media (min-width: 1023px) {
+            margin-left: 20%;
+            text-decoration: underline;
+            color: blue;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        @media (max-width: 1023px) {
+            margin-left: 20%;
+            text-decoration: underline;
+            color: blue;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: justify;
+            width: 20%;
+        }
+
+
+
+        
+    }
     img {
         width: 53%;
         margin-bottom: 2rem;
         margin-top: 3rem;
+        margin-left: 24%;
     }
     p {
-        margin-left: 20%;
-        width: 60%;
-        color: white;
-        font-family: "Palanquin Dark", sans-serif;
-        font-weight: 400;
-        font-size: 100%;
-        text-align: justify;
+
+        @media (min-width: 1023px) {
+            margin-block: 2rem;
+            margin-left: 20%;
+            width: 60%;
+            color: white;
+            font-family: "Palanquin Dark", sans-serif;
+            font-weight: 400;
+            font-size: 100%;
+            text-align: justify;
+        }
+        @media (max-width: 1023px) {
+            margin-block: 2rem;
+            margin-left: 20%;
+            width: 60%;
+            color: white;
+            font-family: "Palanquin Dark", sans-serif;
+            font-weight: 400;
+            font-size: 100%;
+            text-align: justify;
+            font-size: 0.9rem;
+        }
     }
     h1 {
         @media (min-width: 1023px) {
@@ -30,6 +67,10 @@ export const Allcons = styled.div`
             font-weight: 700;
             color:#FFF;
             margin-block: 5%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
 
         }
         @media (max-width: 1023px) {
@@ -38,12 +79,14 @@ export const Allcons = styled.div`
             font-weight: 700;
             color:#FFF;
             margin-block: 5%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
         }
 }
 `
-export const Intero = styled.div`
 
-`
 export const Final = styled.div`
 
     height: 5rem;
@@ -52,10 +95,8 @@ export const Final = styled.div`
 `
 export const Tudo = styled.div`
 `
-export const ImgHeaderUm = styled.div`
-    background-color:#060F24;
-`
-export const BotaoUm = styled.button`
+
+/*export const BotaoUm = styled.button`
 @media (min-width: 767px) {
     text-decoration: none;
     border: #7ED957;
@@ -80,14 +121,11 @@ export const BotaoUm = styled.button`
         padding: 0;
     }
 }
-`
-export const BotaoDois = styled.button`
+`*/
+export const BotaoDois = styled.div`
 @media (min-width: 767px) {
-    text-decoration: none;
-    border: #7ED957;
     width: 10%;
     margin-left: 70%;
-    background: none;
     img{
         width: 99.9%;
         height: 100%;
@@ -95,8 +133,6 @@ export const BotaoDois = styled.button`
     }
 }
 @media (max-width: 767px) {
-    text-decoration: none;
-    border: #7ED957;
     width: 10%;
     margin-left: 70%;
     background: none;
@@ -108,39 +144,35 @@ export const BotaoDois = styled.button`
 }
 `
 
-export const Cabeca = styled.div`
-    background-color:#060F24;
-`
-export const NovoBotaodois = styled.div`
-    text-align: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    display: flex;
-    gap: 33%;
-    padding-block: 0.5%;
 
 
-    img {
-            text-decoration: none;
-            width: 6%;
-            margin-left: 1%;
-            background: none;
-        img{
-            width: 99.9%;
-            height: 100%;
-            padding: 0;
-        }
-    }
+
+
+
+export const Efinal = styled.div`
+    background-color: #192132;
+    height: 5rem;
 
 `
+
+
+//cabecario
+
+export const Link = styled.link`
+`
+
 export const Amem = styled.button`
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
     background: none;
     border: none;
     color: #FFF;
     font-weight: 900;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
+    gap: 30%;
+    margin-right: 2rem;
     @media (min-width: 1300px) {
         background: none;
         border: none;
@@ -150,41 +182,76 @@ export const Amem = styled.button`
     }
 `
 
-export const Botaooumm = styled.button`
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-    border-radius: 25px;
-    color: #42C30B;
-    background-color: white;
-    padding: 4%;
-    padding-inline: 10%;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    justify-content: right;
-    margin-left: 8%;
-`
-export const Botaoodoiss = styled.button`
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-    border-radius: 25px;
-    color: #42C30B;
-    background-color: black;
-    padding: 4%;
-    padding-inline: 10%;
-    margin-left: 0.3%;
-    border: none;
-    cursor: pointer;
-    font-weight: 900;
-    justify-content: right;
+export const NovoBotaoTres = styled.div`
+    margin-left: auto;
+    dislay: flex;
+    text-alight: inline;
+    width: auto;
 `
 
-export const Efinal = styled.div`
-    background-color: #192132;
+export const NovoBotaodois = styled.div`
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    padding-block: 0.5%;
+
+
+    img {
+            text-decoration: none;
+            width: 6%;
+            margin-inline: 3%;
+            background: none;
+        img{
+            width: 99.9%;
+            height: 100%;
+            padding: 0;
+        }
+    }
+`
+
+export const Cabeca = styled.header`
+    background-color:#060F24;
+`
+
+export const Intero = styled.div`
+
+`
+
+
+
+export const ImgHeaderUm = styled.div`
+    background-color:#060F24;
+`
+
+/*kids*/
+
+export const MobileMenu = styled.div`
+    position: relative;
     height: 5rem;
+    background: aqua;
 
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 16rem;
+        padding: 1rem;
+        position: absolute;
+        top: 5rem;
+        background: pink;
+        height: calc()(100vh - 5rem);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    
 `
