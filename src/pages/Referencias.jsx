@@ -1,4 +1,4 @@
-import { Allcons, NovoBotaodois, MobileMenu, Efinal, Amem, NovoBotaoTres, Cabeca, Intero, Final, ImgHeaderUm, BotaoDois } from "./Referencias.styles.js";
+import { Allcons, NovoBotaodois, MobileMenu, Efinal, Amem, NovoBotaoTres, Cabeca, Intero, Final, BotaoUm, Indra, Ashura, ImgHeaderUm, Pretumm, Icone, Impofort, BotaoDois } from "./Referencias.styles.js";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,12 +8,12 @@ import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
 
 export function Referencias() {
-  const [ abrir, setAbrir ] = useState(false)
+  const [ abrirMenu, setAbrirMenu ] = useState(false)
   function moises() {
-    setAbrir(true)
+    setAbrirMenu(true)
   }
   function satamm() {
-    setAbrir(false)
+    setAbrirMenu(false)
   }
   
   const [ tamanho, setTamanho] = useState(window.innerWidth);
@@ -96,30 +96,39 @@ export function Referencias() {
     <header>
 
 
-    <MobileMenu>
+    <MobileMenu  abrir={abrirMenu}>
 
-
+    <Impofort>
     <BotaoDois>
         <img src={fola} alt="" />
-      
+    </BotaoDois>
     
-      
+        <BotaoUm>
         <button onClick={moises}>
         <img src={MyMenu} alt="" />
         </button>
-
-
-      </BotaoDois>
+        </BotaoUm>
+        </Impofort>
+     
 
 
       <nav>
-        <button onClick={satamm}>Fechar</button>
+        <Icone onClick={satamm}>
+            <Indra></Indra>
+            <Ashura></Ashura>
+        </Icone>
       <ul>
+          
           <li><Link to="/">Página inicial</Link></li>
+          <Pretumm></Pretumm>
           <li><Link to="/Guia">Guia</Link></li>
+          <Pretumm></Pretumm>
           <li><Link to="/Pecas">Peças</Link></li>
+          <Pretumm></Pretumm>
           <li><Link to="/Integrantes">Integrantes</Link></li>
+          <Pretumm></Pretumm>
           <li><Link to="/Referencias">Referências</Link></li>
+          <Pretumm></Pretumm>
 
         </ul>
       </nav>

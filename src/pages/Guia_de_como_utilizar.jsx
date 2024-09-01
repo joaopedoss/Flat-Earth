@@ -1,4 +1,4 @@
-import { Allcons, Efinal, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois, Espaco, Espacodois } from "./Guia_de_como_utilizar.js";
+import { Allcons, Efinal, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois, Espaco, Espacodois, Impofort, Icone, Indra, Ashura, Pretumm, MobileMenu, } from "./Guia_de_como_utilizar.js";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,13 @@ import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
 
 export function Guia() {
+  const [ abrirMenu, setAbrirMenu ] = useState(false)
+  function moises() {
+    setAbrirMenu(true)
+  }
+  function satamm() {
+    setAbrirMenu(false)
+  }
 
   const [ tamanho, setTamanho] = useState(window.innerWidth);
 
@@ -114,25 +121,54 @@ export function Guia() {
     </Intero>
   ) : (
     <Intero>
-    <ImgHeaderUm>
+      <ImgHeaderUm>
     <header>
-      <BotaoUm>
+
+
+    <MobileMenu  abrir={abrirMenu}>
+
+    <Impofort>
+    <BotaoDois>
         <img src={fola} alt="" />
-      </BotaoUm>
+    </BotaoDois>
     
-      <BotaoDois>
+        <BotaoUm>
+        <button onClick={moises}>
         <img src={MyMenu} alt="" />
-      </BotaoDois>
-      {/*<button >Página inicial</button>
-      <button >Peças Usadas</button>
-      <button >Guia de Utilização</button>
-      <button >Referências</button>
-      <button >Integrantes</button>
-    <div>
-      <button>Log in</button>
-      <button>Sign up</button>
-    </div>
-    */}
+        </button>
+        </BotaoUm>
+        </Impofort>
+     
+
+
+      <nav>
+        <Icone onClick={satamm}>
+            <Indra></Indra>
+            <Ashura></Ashura>
+        </Icone>
+      <ul>
+          
+          <li><Link to="/">Página inicial</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Guia">Guia</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Pecas">Peças</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Integrantes">Integrantes</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Referencias">Referências</Link></li>
+          <Pretumm></Pretumm>
+
+        </ul>
+      </nav>
+
+
+      </MobileMenu>
+
+
+
+
+
     </header>
     </ImgHeaderUm>
     

@@ -1,4 +1,4 @@
-import { Allcons, BotaoDois, NovoBotaoTres, Texto, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, BotaoUm, Espacodois } from "./Integrantes.styles.js";
+import { Allcons, BotaoDois, NovoBotaoTres, Texto, Impofort, Icone, Indra, Ashura, Pretumm, MobileMenu, Nicolas, Giovanny, Joao, Santini, Pessoas, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, Espaco, BotaoUm, Espacodois } from "./Integrantes.styles.js";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +12,13 @@ import MyMenu from '../assets/Mymenu.png'
 import bebo from '../assets/Bebado.png'
 
 export function Integrantes() {
+  const [ abrirMenu, setAbrirMenu ] = useState(false)
+  function moises() {
+    setAbrirMenu(true)
+  }
+  function satamm() {
+    setAbrirMenu(false)
+  }
 
   const [ tamanho, setTamanho] = useState(window.innerWidth);
 
@@ -181,15 +188,53 @@ export function Integrantes() {
 
 
     <Intero>
-    <ImgHeaderUm>
+      <ImgHeaderUm>
     <header>
-      <BotaoUm>
+
+
+    <MobileMenu  abrir={abrirMenu}>
+
+    <Impofort>
+    <BotaoDois>
         <img src={fola} alt="" />
-      </BotaoUm>
+    </BotaoDois>
     
-      <BotaoDois>
+        <BotaoUm>
+        <button onClick={moises}>
         <img src={MyMenu} alt="" />
-      </BotaoDois>
+        </button>
+        </BotaoUm>
+        </Impofort>
+     
+
+
+      <nav>
+        <Icone onClick={satamm}>
+            <Indra></Indra>
+            <Ashura></Ashura>
+        </Icone>
+      <ul>
+          
+          <li><Link to="/">Página inicial</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Guia">Guia</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Pecas">Peças</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Integrantes">Integrantes</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Referencias">Referências</Link></li>
+          <Pretumm></Pretumm>
+
+        </ul>
+      </nav>
+
+
+      </MobileMenu>
+
+
+
+
 
     </header>
     </ImgHeaderUm>

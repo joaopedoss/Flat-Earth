@@ -1,4 +1,4 @@
-import { Allcons, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Inicio.styles.js";
+import { Allcons, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, ImgHeaderUm, BotaoUm, Impofort, Icone, Indra, Ashura, Pretumm, MobileMenu, BotaoDois } from "./Inicio.styles.js";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,13 @@ import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
 
 export function Inicio() {
+  const [ abrirMenu, setAbrirMenu ] = useState(false)
+  function moises() {
+    setAbrirMenu(true)
+  }
+  function satamm() {
+    setAbrirMenu(false)
+  }
 
   const [ tamanho, setTamanho] = useState(window.innerWidth);
 
@@ -75,17 +82,55 @@ export function Inicio() {
 
       <Intero>
       <ImgHeaderUm>
-      <header>
+    <header>
+
+
+    <MobileMenu  abrir={abrirMenu}>
+
+    <Impofort>
+    <BotaoDois>
+        <img src={fola} alt="" />
+    </BotaoDois>
+    
         <BotaoUm>
-          <img src={fola} alt="" />
+        <button onClick={moises}>
+        <img src={MyMenu} alt="" />
+        </button>
         </BotaoUm>
-      
-        <BotaoDois>
-          <img src={MyMenu} alt="" />
-        </BotaoDois> 
-        
-      </header>
-      </ImgHeaderUm>
+        </Impofort>
+     
+
+
+      <nav>
+        <Icone onClick={satamm}>
+            <Indra></Indra>
+            <Ashura></Ashura>
+        </Icone>
+      <ul>
+          
+          <li><Link to="/">Página inicial</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Guia">Guia</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Pecas">Peças</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Integrantes">Integrantes</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Referencias">Referências</Link></li>
+          <Pretumm></Pretumm>
+
+        </ul>
+      </nav>
+
+
+      </MobileMenu>
+
+
+
+
+
+    </header>
+    </ImgHeaderUm>
       
       <Allcons>
         
