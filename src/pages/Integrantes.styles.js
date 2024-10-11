@@ -6,9 +6,17 @@ export const Allcons = styled.div`
     justify-content: center;
     justify-items: center;
     padding-top: 2rem;
-    background-color: #101728;
+ 
 
     padding-bottom: 2rem;
+
+
+    p {
+        @media (min-width: 1023px) {
+            margin-left: 8%;
+        }
+        
+    }
     img {
 
         margin-bottom: 2rem;
@@ -25,48 +33,10 @@ export const Allcons = styled.div`
             min-width: 40%;
         }
     }
-    p {
-        @media (min-width: 1023px) {
-            text-align: center;
-            width: 60%;
-            color: #00FF66;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 105%;
-    }
-        @media (max-width: 1023px) {
-            text-align: center;
-            width: 60%;
-            color: #00FF66;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 100%;
-    }
-    }
-    li {
-        @media (min-width: 1023px) {
-            margin-left: 20%;
-            width: 60%;
-            text-align: left;
-            color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 105%;
-            margin-bottom: 4%;
-    }
-        @media (max-width: 1023px) {
-            margin-left: 20%;
-            width: 60%;
-            text-align: left;
-            color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 100%;
-            margin-bottom: 4%;
-    }
-    }
+
+
     h1 {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Urbanist", sans-serif;
         font-size: 300%;
         font-weight: 700;
         color:#FFF;
@@ -76,8 +46,7 @@ export const Allcons = styled.div`
 
 export const Final = styled.div`
 
-    height: 5rem;
-    background-color:#42C30B;
+
 
 `
 export const Tudo = styled.div`
@@ -88,66 +57,112 @@ export const ImgHeaderUm = styled.div`
 `
 
 export const Espaco = styled.div`
-    p {
-        text-align: center;
-        margin-left: 17%;
-        text-align: left;
-    }
+    
+`
 
 
-`
-export const Espacodois = styled.div`
-    margin-block: 5%;
-    p {
-        margin-left: 17%;
-        text-align: left;
-    }
-`
+
+
 
 export const Pessoas = styled.div`
     display: flex;
-    margin-bottom: 2%;
-    @media (min-width: 1023px) {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
 
-        p {
-            text-align: center;
-            margin-left: 0%;
-            text-align: justify;
-        }
-        li {
-            text-align: center;
-            margin-left: 0%;
-            text-align: justify;
-            margin-left: 3%;
-        }
-        img {
-            margin-inline: 7%;
-            width: 100%;
-            
-        }
-            }
+    img {
+        max-width: 80%;
+    }
 `
+export const Pessoa = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 9rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+`
+
+
+
+
+
+
 export const Giovanny = styled.div`
-    margin-left: 8%;
-    width: 120%;
+
+`
+export const Afre = styled.p`
+        
+        color: white;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        text-align: center;
+
+        @media (min-width: 1023px) {
+            color: white;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 800;
+            font-size: 150%;
+            
+            margin-bottom: 1%;  
+
+        }
+        @media (max-width: 1023px) {
+
+            color: #FFF;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 700;
+            font-size: 120%;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 1%;  
+
+        }
+`
+export const Sfre = styled.p`
+        
+        color: white;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        text-align: center;
+
+        @media (min-width: 1023px) {
+            color: white;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 500;
+            font-size: 150%;
+            
+            margin-bottom: 1%;  
+
+        }
+        @media (max-width: 1023px) {
+            color: white;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 400;
+            font-size: 120%;
+
+            margin-bottom: 4%;  
+
+        }
 `
 
 export const Joao = styled.div`
-    margin-inline: 7.5%;
-    width: 103%;
 `
 export const Santini = styled.div`
-    margin-inline: 7.5%;
 
-    width: 100%;
 `
 export const Nicolas = styled.div`
-    width: 95%;
-    margin-left: 8%;
-    margin-right: 7.5%;
+
 `
 export const Texto = styled.div`
-    margin-left: 15%;
+    
 `
 
 
@@ -162,11 +177,13 @@ export const Amem = styled.button`
     a {
         text-decoration: none;
         color: #FFF;
+        font-weight: 700;
+        font-family:"Urbanist", sans-serif; 
     }
     background: none;
     border: none;
     color: #FFF;
-    font-weight: 900;
+
     font-size: 1.7rem;
     gap: 30%;
     margin-right: 2rem;
@@ -174,15 +191,12 @@ export const Amem = styled.button`
         background: none;
         border: none;
         color: #FFF;
-        font-weight: 900;
         font-size: 2.3rem;
     }
 `
 
 export const NovoBotaoTres = styled.div`
     margin-left: auto;
-    dislay: flex;
-    text-alight: inline;
     width: auto;
 `
 

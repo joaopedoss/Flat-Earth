@@ -2,7 +2,7 @@ import { Allcons, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Final, Img
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import imgum from '../assets/Pagumm.png'
+import imgum from '../assets/Pagumm.jpg'
 import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
 
@@ -65,9 +65,7 @@ export function Inicio() {
       
       <img src={imgum} alt="" />
       <h1>Flat-Earth</h1>
-      <p>Um projeto de terrário de répteis de baixo porte apresenta uma abordagem inovadora e educativa para o envolvimento com a natureza. Similar com iniciativas como a Cinoterapia e o Terrário-Macaquices, nosso projeto oferece uma oportunidade única de interação terapêutica e educacional, contribuindo para uma compreensão mais profunda dos ecossistemas e incentivando a conservação ambiental. A participação ativa na montagem e manutenção do terrário não apenas despertam o interesse e a curiosidade dos envolvidos, mas também promove o desenvolvimento de habilidades práticas e cognitivas essenciais.</p>
-      <p>A construção e a observação do terrário proporcionam uma experiência prática e imersiva, simulando um ecossistema natural de maneira controlada. Essa vivência tangível facilita o entendimento de conceitos ecológicos, ao mesmo tempo em que promove o desenvolvimento de competências de observação, investigação e responsabilidade. Além disso, ao criar um ambiente seguro para interação com os répteis, o projeto estimula a conexão emocional com a vida selvagem e instiga uma apreciação mais profunda pela biodiversidade.</p>
-      <p>A interação direta com os répteis dentro de um terrário não apenas fascina os participantes, mas também oferece uma oportunidade para aprender sobre suas características e necessidades. Observar o comportamento dos animais e contribuir para seu bem-estar promove uma conexão mais significativa com a natureza e desperta uma consciência sobre a importância da preservação dos ecossistemas. Assim, o projeto de um terrário de répteis não apenas melhora o aprendizado, mas também promove valores de conservação e respeito pelo meio ambiente.</p>
+      <p>Um projeto de terrário de répteis de pequeno porte promove interação educativa e terapêutica com a natureza, incentivando a conservação ambiental. A montagem e observação do terrário oferecem uma experiência prática e imersiva, facilitando o aprendizado de conceitos ecológicos e o desenvolvimento de habilidades como responsabilidade e investigação. Ao criar um ambiente seguro para interagir com os répteis, o projeto fortalece a conexão emocional com a vida selvagem, despertando uma maior consciência sobre a importância da biodiversidade e da preservação dos ecossistemas.</p>
     </Allcons>
     
     <Final>
@@ -136,9 +134,7 @@ export function Inicio() {
         
         <img src={imgum} alt="" />
         <h1>Flat-Earth</h1>
-        <p>Um projeto de terrário de répteis de baixo porte apresenta uma abordagem inovadora e educativa para o envolvimento com a natureza. Similar com iniciativas como a Cinoterapia e o Terrário-Macaquices, nosso projeto oferece uma oportunidade única de interação terapêutica e educacional, contribuindo para uma compreensão mais profunda dos ecossistemas e incentivando a conservação ambiental. A participação ativa na montagem e manutenção do terrário não apenas despertam o interesse e a curiosidade dos envolvidos, mas também promove o desenvolvimento de habilidades práticas e cognitivas essenciais.</p>
-        <p>A construção e a observação do terrário proporcionam uma experiência prática e imersiva, simulando um ecossistema natural de maneira controlada. Essa vivência tangível facilita o entendimento de conceitos ecológicos, ao mesmo tempo em que promove o desenvolvimento de competências de observação, investigação e responsabilidade. Além disso, ao criar um ambiente seguro para interação com os répteis, o projeto estimula a conexão emocional com a vida selvagem e instiga uma apreciação mais profunda pela biodiversidade.</p>
-        <p>A interação direta com os répteis dentro de um terrário não apenas fascina os participantes, mas também oferece uma oportunidade para aprender sobre suas características e necessidades. Observar o comportamento dos animais e contribuir para seu bem-estar promove uma conexão mais significativa com a natureza e desperta uma consciência sobre a importância da preservação dos ecossistemas. Assim, o projeto de um terrário de répteis não apenas melhora o aprendizado, mas também promove valores de conservação e respeito pelo meio ambiente.</p>
+        <p>Um projeto de terrário de répteis de pequeno porte promove interação educativa e terapêutica com a natureza, incentivando a conservação ambiental. A montagem e observação do terrário oferecem uma experiência prática e imersiva, facilitando o aprendizado de conceitos ecológicos e o desenvolvimento de habilidades como responsabilidade e investigação. Ao criar um ambiente seguro para interagir com os répteis, o projeto fortalece a conexão emocional com a vida selvagem, despertando uma maior consciência sobre a importância da biodiversidade e da preservação dos ecossistemas.</p>
       </Allcons>
       
       <Final>

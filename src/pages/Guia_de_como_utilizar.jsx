@@ -2,7 +2,7 @@ import { Allcons, Efinal, NovoBotaoTres, NovoBotaodois, Amem, Cabeca, Intero, Fi
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import imgtres from '../assets/pagtres.png'
+import imgtres from '../assets/pagtres.jpg'
 import menu from '../assets/menu.svg'
 import fola from '../assets/fola.png'
 import MyMenu from '../assets/Mymenu.png'
@@ -64,50 +64,23 @@ export function Guia() {
     
     <Allcons>
       
-
+      
       <img src={imgtres} alt="" />
       <h1>Guia de Como Utilizar </h1>
-      <Espaco>
-        <p>Como Utilizar o Terrário Automatizado com Arduino Uno:</p>
-      </Espaco>
+
       <Espacodois>
-        <p>1. Ligar o Terrário:</p>
+        <p>Para utilizar o terrário automatizado com Arduino Uno, o primeiro passo é garantir que o terrário esteja conectado à energia e que o Arduino esteja ligado corretamente. O controle das funções ocorre automaticamente. Durante o dia, a iluminação é ativada de forma automática, simulando a luz solar natural. À noite, a luz é desligada, criando um ciclo de luz adequado para as plantas e os animais. O aquecimento também é controlado automaticamente, com o relé de calor ativando a manta térmica para manter a temperatura ideal. O Arduino Uno monitora a temperatura constantemente, acionando o aquecimento sempre que necessário.</p>
       </Espacodois>
 
-      <li>Certifique-se de que o terrário esteja conectado à energia.</li>
-      <li>O Arduino Uno deve estar ligado.</li>
       <Espacodois>
-        <p>2. Controle das Funções:</p>
+        <p>O terrário pode ser controlado por um aplicativo que se comunica com o Arduino Uno via conexão Bluetooth. Através do aplicativo, o usuário pode ajustar as funções remotamente, ativando ou desativando conforme necessário. Para utilizar essa funcionalidade, basta se conectar ao terrário via Bluetooth e usar o aplicativo para gerenciar as condições internas.</p>
       </Espacodois>
       
-      <li>Iluminação Automática:</li>
-      <li>Durante o dia, a luz será ativada automaticamente.</li>
-      <li>À noite, a luz será desligada.</li>
-      <li>Isso ajuda a simular o ciclo natural de luz para as plantas e animais.</li>
-
-      <li>Aquecimento Automático:</li>
-      <li>O relé de calor liga a manta térmica para manter a temperatura adequada.</li>
-      <li>O Arduino Uno monitora a temperatura e ativa o relé conforme necessário.</li>
       
       <Espacodois>
-        <p>3. Controle via Aplicativo:</p>
+        <p>A manutenção regular é essencial para o bom funcionamento do terrário. É importante verificar se todos os componentes estão operando corretamente, monitorar os níveis de umidade e temperatura e substituir a água da bomba de chuva sempre que necessário, garantindo o funcionamento contínuo e eficiente do sistema.</p>
       </Espacodois>
 
-      <li>Instale um aplicativo para controlar o terrário.</li>
-      <li>O aplicativo se comunica com o Arduino Uno via Wi-Fi.</li>
-      
-      <Espacodois>
-        <p>4. Instruções para os Usuários:</p>
-      </Espacodois>
-
-      <li>Conecte-se ao terrário via Wi-Fi.</li>
-      <li>Use os botões no aplicativo para ativar/desativar as funções conforme necessário.</li>
-      <Espacodois>
-        <p>5. Manutenção Regular:</p>
-      </Espacodois>
-      <li>Verifique se todos os componentes estão funcionando corretamente.</li>
-      <li>Monitore os níveis de umidade e temperatura.</li>
-      <li>Substitua a água da bomba de chuva conforme necessário.</li>
     </Allcons>
 
     <Efinal>
@@ -173,50 +146,24 @@ export function Guia() {
     </ImgHeaderUm>
     
     <Allcons>
+      
+      
+      <img src={imgtres} alt="" />
       <h1>Guia de Como Utilizar </h1>
 
-      <img src={imgtres} alt="" />
-      <Espaco>
-        <p>Como Utilizar o Terrário Automatizado com Arduino Uno:</p>
-      </Espaco>
       <Espacodois>
-        <p>1. Ligar o Terrário:</p>
+        <p>Para utilizar o terrário automatizado com Arduino Uno, o primeiro passo é garantir que o terrário esteja conectado à energia e que o Arduino esteja ligado corretamente. O controle das funções ocorre automaticamente. Durante o dia, a iluminação é ativada de forma automática, simulando a luz solar natural. À noite, a luz é desligada, criando um ciclo de luz adequado para as plantas e os animais. O aquecimento também é controlado automaticamente, com o relé de calor ativando a manta térmica para manter a temperatura ideal. O Arduino Uno monitora a temperatura constantemente, acionando o aquecimento sempre que necessário.</p>
       </Espacodois>
 
-      <li>Certifique-se de que o terrário esteja conectado à energia.</li>
-      <li>O Arduino Uno deve estar ligado.</li>
       <Espacodois>
-        <p>2. Controle das Funções:</p>
+        <p>O terrário pode ser controlado por um aplicativo que se comunica com o Arduino Uno via conexão Bluetooth. Através do aplicativo, o usuário pode ajustar as funções remotamente, ativando ou desativando conforme necessário. Para utilizar essa funcionalidade, basta se conectar ao terrário via Bluetooth e usar o aplicativo para gerenciar as condições internas.</p>
       </Espacodois>
       
-      <li>Iluminação Automática:</li>
-      <li>Durante o dia, a luz será ativada automaticamente.</li>
-      <li>À noite, a luz será desligada.</li>
-      <li>Isso ajuda a simular o ciclo natural de luz para as plantas e animais.</li>
-
-      <li>Aquecimento Automático:</li>
-      <li>O relé de calor liga a manta térmica para manter a temperatura adequada.</li>
-      <li>O Arduino Uno monitora a temperatura e ativa o relé conforme necessário.</li>
       
       <Espacodois>
-        <p>3. Controle via Aplicativo:</p>
+        <p>A manutenção regular é essencial para o bom funcionamento do terrário. É importante verificar se todos os componentes estão operando corretamente, monitorar os níveis de umidade e temperatura e substituir a água da bomba de chuva sempre que necessário, garantindo o funcionamento contínuo e eficiente do sistema.</p>
       </Espacodois>
 
-      <li>Instale um aplicativo para controlar o terrário.</li>
-      <li>O aplicativo se comunica com o Arduino Uno via Wi-Fi.</li>
-      
-      <Espacodois>
-        <p>4. Instruções para os Usuários:</p>
-      </Espacodois>
-
-      <li>Conecte-se ao terrário via Wi-Fi.</li>
-      <li>Use os botões no aplicativo para ativar/desativar as funções conforme necessário.</li>
-      <Espacodois>
-        <p>5. Manutenção Regular:</p>
-      </Espacodois>
-      <li>Verifique se todos os componentes estão funcionando corretamente.</li>
-      <li>Monitore os níveis de umidade e temperatura.</li>
-      <li>Substitua a água da bomba de chuva conforme necessário.</li>
     </Allcons>
     
     <Efinal>

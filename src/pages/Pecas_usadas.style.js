@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const Allcons = styled.div`
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -11,39 +13,40 @@ export const Allcons = styled.div`
 
     padding-bottom: 2rem;
     img {
-        width: 60%;
-        margin-bottom: 2rem;
+        width: 50%;
+        height: 50%;
 
 
         @media (min-width: 1023px) {
             width: 35%;
-            margin-bottom: 2rem;
-            margin-right: 10%;
-            max-width: 20%;
+            margin-inline: 4%;
+            max-width: 10%;
+            max-height: 50%;
         }
     }
     p {
+        font-family: "Urbanist", sans-serif;
         @media (max-width: 1023px) {
-            margin-left: 20%;
-            width: 60%;
+
             color: white;
-            font-family: "Palanquin Dark", sans-serif;
             font-weight: 400;
             font-size: 90%;
             margin-bottom: 6%;
         }
 
         @media (min-width: 1023px) {
-            width: 60%;
+
             color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 115%;
         }
     }
+    a {
+        text-decoration-color: white;
+    }
     h1 {
+        font-family: "Urbanist", sans-serif;
         @media (min-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 300%;
             font-weight: 700;
             color:#FFF;
@@ -51,7 +54,6 @@ export const Allcons = styled.div`
 
         }
         @media (max-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 250%;
             font-weight: 700;
             color:#FFF;
@@ -59,18 +61,18 @@ export const Allcons = styled.div`
         }
 }
     h2 {
+        font-family: "Urbanist", sans-serif;
         @media (min-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
-            font-size: 230%;
-            font-weight: 700;
-            color:#00FF66;
+            font-size: 170%;
+            font-weight: 500;
+            color:#FFF;
         }
         @media (max-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 150%;
             font-weight: 700;
-            color:#00FF66;
-            margin-bottom: 5%;
+            color:#FFF;
+            margin-block: 2%;
+            margin-bottom: 6%;
         }
     }
    
@@ -78,14 +80,18 @@ export const Allcons = styled.div`
 
 export const Final = styled.div`
 
-    height: 5rem;
-    background-color:#42C30B;
 
 `
 export const Tudo = styled.div`
 `
 export const ImgHeaderUm = styled.div`
     background-color:#060F24;
+`
+export const Rato = styled.div`
+    padding-block: 4%;
+    background-color: #253147;
+    width: 80%;
+    border: solid 3px #000000;
 `
 
 
@@ -126,21 +132,141 @@ export const Botaoodoiss = styled.button`
 
 export const Pekinhas = styled.div`
     display: flex;
-    margin-bottom: 5%;
     align-items: center;
     text-align: center;
     justify-content: center;
     justify-items: center;
+    gap: 17%;
 
 `
 export const Fiodofio = styled.div`
-    width: 35%;
-    text-align: justify;
-    p {
-        width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: inline;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 87%;
+
+
+
+    @media (min-width: 1024px) {
+        font-size: 2.5vh;
+        margin-inline: 8% 2%;
+    }
+    @media (min-width: 1300px) {
+        font-size: 3vh;
+        margin-inline: 8% 2%;
+    }
+    @media (min-width: 1600px) {
+        font-size: 3vh;
+        margin-inline: 8% 0%;
     }
     
 `
+export const Aaum = styled.p`
+    text-align: left;
+
+`
+export const Aadois = styled.p`
+    text-align: center;
+
+
+`
+export const Aatres = styled.p`
+    text-align: right;
+
+`
+
+
+
+
+export const Flra = styled.div`
+    text-align: center;
+    display: flex;
+    align-items: inline;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+
+    @media (min-width: 1024px) {
+        font-size: 2.5vh;
+        margin-inline: 5% 3%;
+    }
+    @media (min-width: 1300px) {
+        font-size: 3vh;
+        margin-inline: 7% 6%;
+    }
+    @media (min-width: 1600px) {
+        font-size: 3vh;
+        margin-inline: 7% 6%;
+    }
+    
+    
+`
+
+export const Batres = styled.p`
+    text-align: left;
+
+`
+export const Badois = styled.p`
+    text-align: center;
+
+
+`
+export const Baum = styled.p`
+    text-align: right;
+
+`
+
+
+
+
+export const Praaa = styled.div`
+    
+    text-align: center;
+    display: flex;
+    align-items: inline;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+
+
+    @media (min-width: 1024px) {
+        font-size: 2.5vh;
+        margin-inline: 5% 6%;
+    }
+    @media (min-width: 1300px) {
+        font-size: 3vh;
+        margin-inline: 6% 7%;
+    }
+    @media (min-width: 1600px) {
+        font-size: 3vh;
+        margin-inline: 6% 7%;
+    }
+
+    
+`
+export const Caum = styled.p`
+    text-align: left;
+
+`
+export const Cadois = styled.p`
+    text-align: center;
+
+
+`
+export const Catres = styled.p`
+    text-align: right;
+
+`
+
+
+
+
+
 
 
 //cabecario
@@ -152,11 +278,13 @@ export const Amem = styled.button`
     a {
         text-decoration: none;
         color: #FFF;
+        font-family:"Urbanist", sans-serif; 
+        font-weight: 700;
     }
     background: none;
     border: none;
     color: #FFF;
-    font-weight: 900;
+
     font-size: 1.7rem;
     gap: 30%;
     margin-right: 2rem;
@@ -164,15 +292,12 @@ export const Amem = styled.button`
         background: none;
         border: none;
         color: #FFF;
-        font-weight: 900;
         font-size: 2.3rem;
     }
 `
 
 export const NovoBotaoTres = styled.div`
     margin-left: auto;
-    dislay: flex;
-    text-alight: inline;
     width: auto;
 `
 

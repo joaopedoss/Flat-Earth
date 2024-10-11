@@ -8,21 +8,23 @@ export const Allcons = styled.div`
     padding-bottom: 2rem;
 
     a{
+        font-family: "Urbanist", sans-serif;
+        margin-left: 27%;
         @media (min-width: 1023px) {
-            margin-left: 20%;
+            
             text-decoration: underline;
-            color: blue;
+            color: lightblue;
             font-weight: 700;
             font-size: 1.5rem;
-            text-align: justify;
+            text-align: left;
         }
         @media (max-width: 1023px) {
-            margin-left: 20%;
+            
             text-decoration: underline;
-            color: blue;
+            color: lightblue    ;
             font-weight: 700;
             font-size: 1.3rem;
-            text-align: justify;
+            text-align: left;
             width: 20%;
         }
 
@@ -36,37 +38,14 @@ export const Allcons = styled.div`
         margin-top: 3rem;
         margin-left: 24%;
     }
-    p {
 
-        @media (min-width: 1023px) {
-            margin-block: 2rem;
-            margin-left: 20%;
-            width: 60%;
-            color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 100%;
-            text-align: justify;
-        }
-        @media (max-width: 1023px) {
-            margin-block: 2rem;
-            margin-left: 20%;
-            width: 60%;
-            color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 100%;
-            text-align: justify;
-            font-size: 0.9rem;
-        }
-    }
     h1 {
+        font-family: "Urbanist", sans-serif;
         @media (min-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 300%;
             font-weight: 700;
             color:#FFF;
-            margin-block: 5%;
+            margin-block: 3%;
             align-items: center;
             text-align: center;
             justify-content: center;
@@ -74,11 +53,10 @@ export const Allcons = styled.div`
 
         }
         @media (max-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 250%;
             font-weight: 700;
             color:#FFF;
-            margin-block: 5%;
+            margin-block: 3%;
             align-items: center;
             text-align: center;
             justify-content: center;
@@ -89,11 +67,47 @@ export const Allcons = styled.div`
 
 export const Final = styled.div`
 
-    height: 5rem;
-    background-color:#42C30B;
 
 `
 export const Tudo = styled.div`
+`
+
+export const Aga = styled.p`
+    @media (max-width: 1023px) {
+        font-size: 70%;
+    }
+
+`
+export const Clarencio = styled.p`
+        margin-left: 27%;
+        width: 60%;
+        color: white;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        text-align: justify;
+        margin-top: 3%;
+
+        @media (min-width: 1023px) {
+            width: 70%;
+            color: white;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 500;
+            font-size: 170%;
+             
+
+        }
+        @media (max-width: 1023px) {
+
+            width: 60%;
+            color: white;
+            font-family: "Urbanist", sans-serif;
+            font-weight: 400;
+            font-size: 140%;
+        }
+        @media (max-width: 680px) {
+            margin-left: 20%;
+     }
+    
 `
 
 
@@ -119,11 +133,13 @@ export const Amem = styled.button`
     a {
         text-decoration: none;
         color: #FFF;
+        font-weight: 700;
+        font-family:"Urbanist", sans-serif; 
     }
     background: none;
     border: none;
     color: #FFF;
-    font-weight: 900;
+
     font-size: 1.7rem;
     gap: 30%;
     margin-right: 2rem;
@@ -131,15 +147,12 @@ export const Amem = styled.button`
         background: none;
         border: none;
         color: #FFF;
-        font-weight: 900;
         font-size: 2.3rem;
     }
 `
 
 export const NovoBotaoTres = styled.div`
     margin-left: auto;
-    dislay: flex;
-    text-alight: inline;
     width: auto;
 `
 

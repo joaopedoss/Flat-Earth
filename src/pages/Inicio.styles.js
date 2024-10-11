@@ -6,7 +6,8 @@ export const Allcons = styled.div`
     justify-content: center;
     justify-items: center;
     padding-top: 2rem;
-    background-color: #192132;
+
+
 
     padding-bottom: 2rem;
     img {
@@ -18,57 +19,53 @@ export const Allcons = styled.div`
         margin-left: 20%;
         width: 60%;
         color: white;
-        font-family: "Palanquin Dark", sans-serif;
+        font-family: "Urbanist", sans-serif;
         font-weight: 400;
-        font-size: 100%;
-        
+        text-align: justify;
 
         @media (min-width: 1023px) {
-            margin-left: 20%;
-            width: 60%;
+            margin-left: 15%;
+            width: 70%;
             color: white;
-            font-family: "Palanquin Dark", sans-serif;
-            font-weight: 400;
-            font-size: 100%;
-            text-align: justify;
-            margin-bottom: 4%;  
+            font-family: "Urbanist", sans-serif;
+            font-weight: 500;
+            font-size: 150%;
+            
+            margin-bottom: 1%;  
 
         }
         @media (max-width: 1023px) {
             margin-left: 20%;
             width: 60%;
             color: white;
-            font-family: "Palanquin Dark", sans-serif;
+            font-family: "Urbanist", sans-serif;
             font-weight: 400;
-            font-size: 100%;
+            font-size: 120%;
 
-            margin-bottom: 4%;  
+            margin-bottom: 1%;  
 
         }
     }
     h1 {
+        font-family: "Urbanist", sans-serif;
         @media (min-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 300%;
             font-weight: 700;
             color:#FFF;
-            margin-block: 5%;
-
+            margin-block: 3%;
+            margin-bottom: 5%;
         }
         @media (max-width: 1023px) {
-            font-family: "Open Sans", sans-serif;
             font-size: 250%;
             font-weight: 700;
             color:#FFF;
-            margin-block: 5%;
+            margin-block: 3%;
         }
-}
+    }
 `
 
 export const Final = styled.div`
 
-    height: 5rem;
-    background-color:#42C30B;
 
 `
 export const Tudo = styled.div`
@@ -98,11 +95,13 @@ export const Amem = styled.button`
     a {
         text-decoration: none;
         color: #FFF;
+        font-weight: 700;
+        font-family:"Urbanist", sans-serif; 
     }
     background: none;
     border: none;
     color: #FFF;
-    font-weight: 900;
+
     font-size: 1.7rem;
     gap: 30%;
     margin-right: 2rem;
@@ -110,15 +109,12 @@ export const Amem = styled.button`
         background: none;
         border: none;
         color: #FFF;
-        font-weight: 900;
         font-size: 2.3rem;
     }
 `
 
 export const NovoBotaoTres = styled.div`
     margin-left: auto;
-    dislay: flex;
-    text-alight: inline;
     width: auto;
 `
 

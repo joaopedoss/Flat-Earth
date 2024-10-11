@@ -6,6 +6,12 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "Overpass", sans-serif;
+        
+    }
+    body{
+        background-color: #192132;
+        height: 100%;
+
     }
 
 `

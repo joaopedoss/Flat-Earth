@@ -1,17 +1,17 @@
-import { Allcons, Pekinhas, Fiodofio, NovoBotaodois, Amem, NovoBotaoTres, Cabeca, Impofort, Icone, Indra, Ashura, Pretumm, MobileMenu, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois } from "./Pecas_usadas.style.js";
+import { Allcons, Aaum, Aadois, Aatres, Pekinhas, Fiodofio, Batres, Badois, Baum, Caum, Cadois, Catres, Praaa, Flra, NovoBotaodois, Amem, NovoBotaoTres, Cabeca, Impofort, Icone, Indra, Ashura, Pretumm, MobileMenu, Intero, Final, ImgHeaderUm, BotaoUm, BotaoDois, Rato } from "./Pecas_usadas.style.js";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import placa from '../assets/placa.png'
 import servo from '../assets/servo.png'
-import utrassonico from '../assets/utrassonico.png'
+import utrassonico from '../assets/ultrassonico.png'
 import led from '../assets/led.png'
-import micromicro from '../assets/micromicro.jpeg'
-import modulorele from '../assets/modulorele.jpg'
-import modulowifi from '../assets/modulowifi.jpg'
-import umidade from '../assets/umidade.jpg'
-import temperatura from '../assets/temperatura.jpeg'
-import dht22 from '../assets/dht22-1.jpg'
+import micromicro from '../assets/micromicro.png'
+import modulorele from '../assets/modulorele.png'
+import modulowifi from '../assets/modulowifi.png'
+import umidade from '../assets/umidade.png'
+import temperatura from '../assets/temperatura.png'
+import dht22 from '../assets/dht22-1.png'
 import resistores from '../assets/resistores.png'
 import fios from '../assets/fios.png'
 import MyMenu from '../assets/Mymenu.png'
@@ -78,136 +78,58 @@ export function Pecas() {
 
       <h1>Peças Usadas</h1>
 
+
+      <Rato>
       <Pekinhas>
-        <img src={placa} alt="Arduino Uno" />
-        <Fiodofio>
-        <h2>Arduino Uno</h2>
-        <p>As placas-mãe Arduino são o coração de muitos projetos eletrônicos. Elas são compactas, fáceis de usar e podem ser programadas para controlar uma variedade de dispositivos. Com uma vasta comunidade de desenvolvedores e recursos disponíveis, as placas Arduino são uma escolha popular para iniciantes e profissionais que desejam criar protótipos e projetos DIY.</p>
-        </Fiodofio>
-      </Pekinhas>
-
-
-
-
-      <Pekinhas>
+       <img src={placa} alt="Arduino Uno" />
         <img src={servo} alt="Servo" />
-        <Fiodofio>
-          <h2>Servo</h2>
-          <p>O servo motor do Arduino é um dispositivo usado para controlar o movimento de objetos com precisão. Ele consiste em um motor, engrenagens e um circuito interno. Com o Arduino, podemos enviar sinais PWM para controlar o ângulo de rotação do servo. Isso é útil em uma variedade de projetos, desde robôs até sistemas de automação.</p>
-        </Fiodofio>
-      </Pekinhas>
-
-
-
-
-      <Pekinhas>
         <img src={utrassonico} alt="Sensor ultrassônico" />
-        <Fiodofio>
-          <h2>Sensor ultrassônico</h2>
-          <p>O sensor ultrassônico do Arduino é um dispositivo usado para medir distâncias por meio de ondas sonoras. Ele emite pulsos sonoros e calcula a distância com base no tempo que leva para os ecos retornarem. É útil em projetos de detecção de objetos, sistemas de segurança e robótica, fornecendo uma maneira eficaz de medir distâncias com precisão.</p>
-        </Fiodofio>
       </Pekinhas>
 
 
-
-
-      <Pekinhas>
-        <img src={led} alt="Led" />
         <Fiodofio>
-          <h2>Led</h2>
-          <p>O LED do Arduino UNO é um pequeno diodo emissor de luz integrado à placa, conectado ao pino digital 13. Ele é identificado pela letra L próxima a esse pino. Este LED é uma ferramenta prática para testes e depuração de projetos sem a necessidade de componentes externos adicionais.</p>
+        <a href="https://docs.arduino.cc/hardware/uno-rev3/"><Aaum>Arduino Uno</Aaum></a>
+        <a href="https://docs.arduino.cc/learn/electronics/servo-motors/"><Aadois>Servo Motor</Aadois></a>
+        <a href="https://www.makerhero.com/blog/sensor-ultrassonico-hc-sr04-ao-arduino/"><Aatres>Sen. Ultrassônico</Aatres></a>
         </Fiodofio>
-      </Pekinhas>
+      
 
 
 
 
-      <Pekinhas>
-        <img src={micromicro} alt="Micro Chave" />
-        <Fiodofio>
-          <h2>Micro Chave</h2>
-          <p>O módulo de chave SS12D00G4 é uma chave deslizante usada em circuitos elétricos para abrir ou fechar conexões, normalmente com 2 posições (on-off ou on-on). É comumente encontrada em dispositivos eletrônicos de baixa corrente e tensão, como brinquedos e pequenos eletrodomésticos, sendo montada em placas de circuito impresso (PCB).</p>
-        </Fiodofio>
-      </Pekinhas>
 
-
-
-
-      <Pekinhas>
+        <Pekinhas>
+        <img src={micromicro} alt="Bomba D'água" />
         <img src={modulorele} alt="Modulo Relé Dulpo" />
-        <Fiodofio>
-          <h2>Módulo Relé Duplo</h2>
-          <p>O Módulo Relé Duplo é um dispositivo eletrônico usado para controlar dois circuitos de alta potência ou tensão a partir de sinais de baixa potência, como os gerados por um microcontrolador. Cada relé no módulo pode ser ativado ou desativado independentemente, permitindo o controle de dois dispositivos ou cargas diferentes. É comum em projetos de automação, como controle de lâmpadas, motores, e outros aparelhos elétricos. O módulo é frequentemente utilizado em sistemas que requerem isolamento elétrico entre o circuito de controle e a carga.</p>
-        </Fiodofio>
+        <img src={modulowifi} alt="Módulo de Bluetooth" />
       </Pekinhas>
 
 
-
-
-      <Pekinhas>
-        <img src={modulowifi} alt="Módulo de Wifi" />
-        <Fiodofio>
-          <h2>Módulo de Wifi</h2>
-          <p>O Módulo de Wi-Fi é um dispositivo que permite a conexão de equipamentos eletrônicos à rede sem fio (Wi-Fi), permitindo a comunicação e controle remoto via internet. Esses módulos são amplamente usados em projetos de Internet das Coisas (IoT), como em sistemas de automação residencial, dispositivos inteligentes, e aplicações de monitoramento. Eles geralmente se conectam a microcontroladores ou microprocessadores e permitem que os dispositivos troquem dados ou sejam controlados remotamente através de redes Wi-Fi, facilitando a integração de dispositivos comuns ao ambiente digital.</p>
-        </Fiodofio>
-      </Pekinhas>
+        <Flra>
+        <a href="https://blog.zerokol.com/2013/03/bomba-dagua-com-arduino.html"><Baum>Bomba D'água</Baum></a>
+        <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-rele-5v-de-2-canais"><Badois>Relé Duplo</Badois></a>
+        <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-bluetooth-hc-05-hc-06"><Batres>Módulo Bluetooth</Batres></a>
+        </Flra>
+      
 
 
 
 
-      <Pekinhas>    
+
+      
+        <Pekinhas>
         <img src={umidade} alt="Sensor de Umidade" />
-        <Fiodofio>
-          <h2>Sensor de Umidade</h2>
-          <p>O Sensor de Umidade é um dispositivo usado para medir a quantidade de umidade presente no ar ou em materiais. Esse sensor é amplamente utilizado em aplicações como sistemas de controle de clima, monitoramento ambiental, e agricultura, onde é importante saber o nível de umidade para garantir condições ideais. Ele funciona convertendo a umidade em um sinal elétrico que pode ser interpretado por um microcontrolador ou outro dispositivo eletrônico, permitindo ações automatizadas baseadas nos níveis de umidade detectados.</p>
-        </Fiodofio>
-      </Pekinhas>
-
-
-
-
-      <Pekinhas>
         <img src={temperatura} alt="Sensor de Temperatura" />
-        <Fiodofio>
-          <h2>Sensor de Temperatura</h2>
-          <p>O Sensor de Temperatura é um dispositivo utilizado para medir a temperatura de um ambiente ou objeto. Ele converte a temperatura em um sinal elétrico que pode ser lido por microcontroladores ou sistemas eletrônicos, permitindo a monitoração e controle de processos que dependem de variações térmicas. Esses sensores são comuns em sistemas de climatização, dispositivos eletrônicos, eletrodomésticos, e em aplicações industriais, onde o controle preciso da temperatura é essencial para o funcionamento seguro e eficiente dos equipamentos.</p>
-        </Fiodofio>
-      </Pekinhas>
-
-
-
-
-      <Pekinhas>
         <img src={dht22} alt="DHT22" />
-        <Fiodofio>
-          <h2>Sensor DHT22</h2>
-          <p>O Sensor DHT22 é um dispositivo que mede tanto a temperatura quanto a umidade do ambiente, oferecendo alta precisão e confiabilidade. Ele é amplamente utilizado em projetos de monitoramento ambiental, automação residencial, e sistemas de controle climático. O DHT22 converte as medições de temperatura e umidade em sinais digitais que podem ser facilmente lidos por microcontroladores, permitindo uma integração simples com sistemas eletrônicos. É conhecido por sua faixa ampla de medição e precisão superior em comparação com sensores similares.</p>
-        </Fiodofio>
       </Pekinhas>
 
 
-
-
-      <Pekinhas>
-        <img src={resistores} alt="Resistor" />
-        <Fiodofio>
-          <h2>Resistor</h2>
-          <p>Um resistor é um componente eletrônico passivo fundamental em circuitos elétricos, cuja principal função é limitar ou regular o fluxo de corrente elétrica. Ele faz isso oferecendo uma resistência ao movimento dos elétrons, dissipando energia na forma de calor. Resistores são usados em quase todos os tipos de dispositivos eletrônicos, desempenhando papéis cruciais em controlar tensões, proteger componentes e ajustar níveis de sinal.</p>
-        </Fiodofio>
-      </Pekinhas>
-
-
-
-
-      <Pekinhas>
-        <img src={fios} alt="Jumpers e Fios" />
-        <Fiodofio>
-          <h2>Jumpers e Fios</h2>
-          <p>Os jumpers são fios condutores com conectores em ambas as extremidades. Eles desempenham um papel fundamental na montagem de circuitos eletrônicos e sistemas temporários. Aqui estão os principais pontos:</p>
-        </Fiodofio>
-      </Pekinhas>
-
-            
+        <Praaa>
+        <a href="https://blog.eletrogate.com/guia-do-sensor-de-umidade-do-solo-e-sensor-de-chuva/"><Caum>Sensor de Umid.</Caum></a>
+        <a href="https://blog.eletrogate.com/guia-completo-sobre-sensor-de-temperatura-ds18b20-a-prova-dagua/"><Cadois>Sensor de Temp.</Cadois></a>
+        <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-de-umidade-e-temperatura-dht22-am2302"><Catres>Sensor DHT22</Catres></a>
+        </Praaa>
+        </Rato>
 
     </Allcons>
     
@@ -276,53 +198,49 @@ export function Pecas() {
     <Allcons>
       <h1>Peças Usadas</h1>
       <img src={placa} alt="Arduino Uno" />
-      <h2>Arduino Uno</h2>
-      <p>As placas-mãe Arduino são o coração de muitos projetos eletrônicos. Elas são compactas, fáceis de usar e podem ser programadas para controlar uma variedade de dispositivos. Com uma vasta comunidade de desenvolvedores e recursos disponíveis, as placas Arduino são uma escolha popular para iniciantes e profissionais que desejam criar protótipos e projetos DIY.</p>
-      
+      <a href="https://docs.arduino.cc/hardware/uno-rev3/"><h2>Arduino Uno</h2></a>
+
+
+
       <img src={servo} alt="Servo" />
-      <h2>Servo</h2>
-      <p>O servo motor do Arduino é um dispositivo usado para controlar o movimento de objetos com precisão. Ele consiste em um motor, engrenagens e um circuito interno. Com o Arduino, podemos enviar sinais PWM para controlar o ângulo de rotação do servo. Isso é útil em uma variedade de projetos, desde robôs até sistemas de automação.</p>
-      
+      <a href="https://docs.arduino.cc/learn/electronics/servo-motors/"><h2>Servo Motor</h2></a>
+
+
+
       <img src={utrassonico} alt="Sensor ultrassônico" />
-      <h2>Sensor ultrassônico</h2>
-      <p>O sensor ultrassônico do Arduino é um dispositivo usado para medir distâncias por meio de ondas sonoras. Ele emite pulsos sonoros e calcula a distância com base no tempo que leva para os ecos retornarem. É útil em projetos de detecção de objetos, sistemas de segurança e robótica, fornecendo uma maneira eficaz de medir distâncias com precisão.</p>
-      
-      <img src={led} alt="Led" />
-      <h2>Led</h2>
-      <p>O LED do Arduino UNO é um pequeno diodo emissor de luz integrado à placa, conectado ao pino digital 13. Ele é identificado pela letra L próxima a esse pino. Este LED é uma ferramenta prática para testes e depuração de projetos sem a necessidade de componentes externos adicionais.</p>
-      
-      <img src={micromicro} alt="Micro Chave" />
-      <h2>Micro Chave</h2>
-      <p>O módulo de chave SS12D00G4 é uma chave deslizante usada em circuitos elétricos para abrir ou fechar conexões, normalmente com 2 posições (on-off ou on-on). É comumente encontrada em dispositivos eletrônicos de baixa corrente e tensão, como brinquedos e pequenos eletrodomésticos, sendo montada em placas de circuito impresso (PCB).</p>
-      
+      <a href="https://www.makerhero.com/blog/sensor-ultrassonico-hc-sr04-ao-arduino/"><h2>Sen. Ultrassônico</h2></a>
+ 
+ 
+
+      <img src={micromicro} alt="Bomba D'água" />
+      <a href="https://blog.zerokol.com/2013/03/bomba-dagua-com-arduino.html"><h2>Bomba D'água</h2></a>
+ 
+
+
       <img src={modulorele} alt="Modulo Relé Dulpo" />
-      <h2>Módulo Relé Duplo</h2>
-      <p>O Módulo Relé Duplo é um dispositivo eletrônico usado para controlar dois circuitos de alta potência ou tensão a partir de sinais de baixa potência, como os gerados por um microcontrolador. Cada relé no módulo pode ser ativado ou desativado independentemente, permitindo o controle de dois dispositivos ou cargas diferentes. É comum em projetos de automação, como controle de lâmpadas, motores, e outros aparelhos elétricos. O módulo é frequentemente utilizado em sistemas que requerem isolamento elétrico entre o circuito de controle e a carga.</p>
-      
+      <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-rele-5v-de-2-canais"><h2>Relé Duplo</h2></a>
+ 
+
+
       <img src={modulowifi} alt="Módulo de Wifi" />
-      <h2>Módulo de Wifi</h2>
-      <p>O Módulo de Wi-Fi é um dispositivo que permite a conexão de equipamentos eletrônicos à rede sem fio (Wi-Fi), permitindo a comunicação e controle remoto via internet. Esses módulos são amplamente usados em projetos de Internet das Coisas (IoT), como em sistemas de automação residencial, dispositivos inteligentes, e aplicações de monitoramento. Eles geralmente se conectam a microcontroladores ou microprocessadores e permitem que os dispositivos troquem dados ou sejam controlados remotamente através de redes Wi-Fi, facilitando a integração de dispositivos comuns ao ambiente digital.</p>
+      <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-modulo-bluetooth-hc-05-hc-06"><h2>Módulo de Bluetooth</h2></a>
       
+
+
       <img src={umidade} alt="Sensor de Umidade" />
-      <h2>Sensor de Umidade</h2>
-      <p>O Sensor de Umidade é um dispositivo usado para medir a quantidade de umidade presente no ar ou em materiais. Esse sensor é amplamente utilizado em aplicações como sistemas de controle de clima, monitoramento ambiental, e agricultura, onde é importante saber o nível de umidade para garantir condições ideais. Ele funciona convertendo a umidade em um sinal elétrico que pode ser interpretado por um microcontrolador ou outro dispositivo eletrônico, permitindo ações automatizadas baseadas nos níveis de umidade detectados.</p>
-      
+      <a href="https://blog.eletrogate.com/guia-do-sensor-de-umidade-do-solo-e-sensor-de-chuva/"><h2>Sensor de Umid.</h2></a>
+  
+
+
       <img src={temperatura} alt="Sensor de Temperatura" />
-      <h2>Sensor de Temperatura</h2>
-      <p>O Sensor de Temperatura é um dispositivo utilizado para medir a temperatura de um ambiente ou objeto. Ele converte a temperatura em um sinal elétrico que pode ser lido por microcontroladores ou sistemas eletrônicos, permitindo a monitoração e controle de processos que dependem de variações térmicas. Esses sensores são comuns em sistemas de climatização, dispositivos eletrônicos, eletrodomésticos, e em aplicações industriais, onde o controle preciso da temperatura é essencial para o funcionamento seguro e eficiente dos equipamentos.</p>
+      <a href="https://blog.eletrogate.com/guia-completo-sobre-sensor-de-temperatura-ds18b20-a-prova-dagua/"><h2>Sensor de Temp.</h2></a>
+      
+
       
       <img src={dht22} alt="DHT22" />
-      <h2>Sensor DHT22</h2>
-      <p>O Sensor DHT22 é um dispositivo que mede tanto a temperatura quanto a umidade do ambiente, oferecendo alta precisão e confiabilidade. Ele é amplamente utilizado em projetos de monitoramento ambiental, automação residencial, e sistemas de controle climático. O DHT22 converte as medições de temperatura e umidade em sinais digitais que podem ser facilmente lidos por microcontroladores, permitindo uma integração simples com sistemas eletrônicos. É conhecido por sua faixa ampla de medição e precisão superior em comparação com sensores similares.</p>
+      <a href="https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-de-umidade-e-temperatura-dht22-am2302"><h2>Sensor DHT22</h2></a>
       
-      <img src={resistores} alt="Resistor" />
-      <h2>Resistor</h2>
-      <p>Um resistor é um componente eletrônico passivo fundamental em circuitos elétricos, cuja principal função é limitar ou regular o fluxo de corrente elétrica. Ele faz isso oferecendo uma resistência ao movimento dos elétrons, dissipando energia na forma de calor. Resistores são usados em quase todos os tipos de dispositivos eletrônicos, desempenhando papéis cruciais em controlar tensões, proteger componentes e ajustar níveis de sinal.</p>
-      
-      <img src={fios} alt="Jumpers e Fios" />
-      <h2>Jumpers e Fios</h2>
-      <p>Os jumpers são fios condutores com conectores em ambas as extremidades. Eles desempenham um papel fundamental na montagem de circuitos eletrônicos e sistemas temporários. Aqui estão os principais pontos:</p>
-      
+   
 
     </Allcons>
     
