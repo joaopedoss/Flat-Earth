@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Tudo } from "./pages/Inicio.styles.js"
 
 import { Inicio } from "./pages/Inicio.jsx"
+import { Jogo } from "./pages/Jogo.jsx"
 import { Referencias } from "./pages/Referencias.jsx"
 import { GlobalStyle } from "./styles/global.js"
 import { Guia } from "./pages/Guia_de_como_utilizar.jsx"
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/Referencias",
     element: <Referencias />
+  },
+  {
+    path: "/Jogo",
+    element: <Jogo />
   }
 ])
 
