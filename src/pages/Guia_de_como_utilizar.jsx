@@ -52,6 +52,7 @@ export function Guia() {
           <Amem> <Link to="/Pecas">Peças</Link></Amem>
           <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
           <Amem> <Link to="/Referencias">Referências</Link></Amem>
+          <Amem> <Link to="/Jogo">Jogo</Link></Amem>
         </NovoBotaoTres>
         </NovoBotaodois>
 
@@ -65,8 +66,24 @@ export function Guia() {
     <Allcons>
       
       
-      <img src={imgtres} alt="" />
+      
       <h1>Guia de Como Utilizar </h1>
+
+      <div>
+      <iframe
+        width="850"
+        height="520"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{ display: 'block', margin: '0 auto', marginBlock: '4%' }} // Aqui o estilo está no formato correto
+      ></iframe>
+      </div>
+
+
+
 
       <Espacodois>
         <p>Para utilizar o terrário automatizado com Arduino Uno, o primeiro passo é garantir que o terrário esteja conectado à energia e que o Arduino esteja ligado corretamente. O controle das funções ocorre automaticamente. Durante o dia, a iluminação é ativada de forma automática, simulando a luz solar natural. À noite, a luz é desligada, criando um ciclo de luz adequado para as plantas e os animais. O aquecimento também é controlado automaticamente, com o relé de calor ativando a manta térmica para manter a temperatura ideal. O Arduino Uno monitora a temperatura constantemente, acionando o aquecimento sempre que necessário.</p>
@@ -131,6 +148,8 @@ export function Guia() {
           <Pretumm></Pretumm>
           <li><Link to="/Referencias">Referências</Link></li>
           <Pretumm></Pretumm>
+          <li><Link to="/Jogo">Jogo</Link></li>
+          <Pretumm></Pretumm>
 
         </ul>
       </nav>
@@ -148,8 +167,20 @@ export function Guia() {
     <Allcons>
       
       
-      <img src={imgtres} alt="" />
       <h1>Guia de Como Utilizar </h1>
+
+      <div>
+      <iframe
+        width="70%"
+        height="400"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{ display: 'block', margin: '0 auto', marginBlock: '4%'  }} // Aqui o estilo está no formato correto
+      ></iframe>
+    </div>
 
       <Espacodois>
         <p>Para utilizar o terrário automatizado com Arduino Uno, o primeiro passo é garantir que o terrário esteja conectado à energia e que o Arduino esteja ligado corretamente. O controle das funções ocorre automaticamente. Durante o dia, a iluminação é ativada de forma automática, simulando a luz solar natural. À noite, a luz é desligada, criando um ciclo de luz adequado para as plantas e os animais. O aquecimento também é controlado automaticamente, com o relé de calor ativando a manta térmica para manter a temperatura ideal. O Arduino Uno monitora a temperatura constantemente, acionando o aquecimento sempre que necessário.</p>

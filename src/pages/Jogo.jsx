@@ -67,8 +67,8 @@ export function Jogo() {
     <h1>Jogo</h1>
     <div>
       <iframe
-        width="700"
-        height="490"
+        width="850"
+        height="520"
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         title="YouTube video player"
         frameBorder="0"
@@ -150,7 +150,7 @@ export function Jogo() {
     <div>
       <iframe
         width="70%"
-        height="300"
+        height="400"
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         title="YouTube video player"
         frameBorder="0"

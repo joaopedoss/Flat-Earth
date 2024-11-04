@@ -51,6 +51,7 @@ export function Inicio() {
           <Amem> <Link to="/Pecas">Peças</Link></Amem>
           <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
           <Amem> <Link to="/Referencias">Referências</Link></Amem>
+          <Amem> <Link to="/Jogo">Jogo</Link></Amem>
         </NovoBotaoTres>
         </NovoBotaodois>
 
@@ -115,6 +116,8 @@ export function Inicio() {
           <li><Link to="/Integrantes">Integrantes</Link></li>
           <Pretumm></Pretumm>
           <li><Link to="/Referencias">Referências</Link></li>
+          <Pretumm></Pretumm>
+          <li><Link to="/Jogo">Jogo</Link></li>
           <Pretumm></Pretumm>
 
         </ul>
