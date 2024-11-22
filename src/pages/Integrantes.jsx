@@ -51,7 +51,7 @@ export function Integrantes() {
         <Amem ><Link to="/">Flat-Earth</Link></Amem>
         
         <NovoBotaoTres>
-          <Amem> <Link to="/Guia">Guia</Link></Amem>
+          <Amem> <Link to="/Guia">Vídeos</Link></Amem>
           <Amem> <Link to="/Pecas">Peças</Link></Amem>
           <Amem> <Link to="/Integrantes">Integrantes</Link></Amem>
           <Amem> <Link to="/Referencias">Referências</Link></Amem>
@@ -198,7 +198,7 @@ export function Integrantes() {
           
           <li><Link to="/">Página inicial</Link></li>
           <Pretumm></Pretumm>
-          <li><Link to="/Guia">Guia</Link></li>
+          <li><Link to="/Guia">Vídeos</Link></li>
           <Pretumm></Pretumm>
           <li><Link to="/Pecas">Peças</Link></li>
           <Pretumm></Pretumm>
